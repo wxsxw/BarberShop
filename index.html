@@ -7,28 +7,28 @@
     <title>BarberShop</title>
 </head>
 <body>
- <header>
-    <a href="./index.html">Logo</a>
+ <header class="header">
+    <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="Logo"></a>
 <nav>
-    <ul>
-        <li><a href="">О нас</a></li>
-        <li><a href="">Услуги и цены</a></li>
-        <li><a href="">Мастера</a></li>
-        <li><a href="">Контакты</a></li>
+    <ul class="nav">
+        <li><a href="#about" class="nav-link">О нас</a></li>
+        <li><a href="#prices" class="nav-link">Услуги и цены</a></li>
+        <li><a href="#masters" class="nav-link">Мастера</a></li>
+        <li><a href="#contacts" class="nav-link">Контакты</a></li>
     </ul>
 </nav>
  <div>
-    <a href="tel:+380441111111">+38 044 111 11 11</a>
-    <button type="button">онлайн-запись</button>
+    <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
+    <button type="button" class="header-btn">онлайн-запись</button>
  </div>
  
  </header>   
 <main>
     <!-- hero -->
 <section>
-    <div>
-        <a href="">Instagram</a>
-        <a href="">Youtube</a>
+    <div class="networks">
+        <a href="" class="networks-link">Instagram</a>
+        <a href=""class="networks-link">Youtube</a>
     </div>
     <p>A hair salon for men in Kyiv</p>
     <h1>BarberShop</h1>
@@ -36,7 +36,7 @@
     Работаем быстро, осторожно и со вкусом.</p>
 </section>
 <!-- about -->
-<section>
+<section id="about">
     <ul>
         <li> <img src="./img/помазок.jpg" alt="помазок" width="270"></li>
         <li> <img src="./img/опаска.jpg" alt="опаска" width="270"></li>
@@ -52,7 +52,7 @@
     <button type="button">онлайн-запись</button>
 </section>
 <!-- prices -->
-<section>
+<section id="prices">
     <p>Проведи время в компании лучших мастеров</p>
     <h2>Услуги и цены</h2>
      <ul>
@@ -109,8 +109,9 @@
     <h2>Почему приходят именно к нам?</h2>
     <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
 </section>
-<section>
-    <!-- Наши мастера -->
+<!-- Наши мастера -->
+<section id="masters">
+   
     <p>для настоящих ценителей атмосферы</p>
     <h2>Наши мастера</h2>
     <ul>
@@ -146,6 +147,22 @@
         <li><img src="./img/спа.jpg" alt="спа" width="270" height="360"></li>
         <li><img src="./img/окантовка.jpg" alt="окантовка"width="270" height="360"></li>
     </lu>
+</section>
+<!-- contacts -->
+<section id="contacts">
+    <div>
+        <h2>Онлайн-запись</h2>
+        <button type="button">отправить</button>
+    </div>
+    <div>
+        <h2>Контакты</h2>
+        <ul>
+            <li><a href="">ул. Васильковая, 7А
+            Киев, 08132</a></li>
+            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+        </ul>
+    </div>
 </section>
 <!-- Footer -->
 <footer>
