@@ -1,0 +1,73 @@
+:root {
+  --header-color-text: #ffffff;
+  --second-title-color: #303030;
+  --first-btn-color: #ffffff;
+  --accent-color: #ff6c00;
+  --second-btn-color: #303030;
+}
+
+body {
+  background-color: #ffffff;
+  color: #555555;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.nav {
+  color: tomato;
+}
+
+/* ---- header----- */
+.header {
+  background-color: grey;
+}
+.logo {
+}
+.header-nav {
+}
+.nav {
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-color-text);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.header-contacts {
+}
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--header-color-text);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--header-color-text);
+}
+..header-btn:hover,
+.header-btn:focus {
+  background-color: var(--accent-color);
+}
