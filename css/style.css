@@ -4,28 +4,66 @@
   --first-btn-color: #ffffff;
   --accent-color: #ff6c00;
   --second-btn-color: #303030;
+  --typical-gap: 20px;
 }
 
 body {
   background-color: #ffffff;
   color: #555555;
   font-family: 'Open Sans', 'sans-serif';
-}
-
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
+  margin: 0;
 }
 
 .nav {
   color: tomato;
 }
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* ----resset--- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* ---- header----- */
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo {
 }
@@ -74,7 +112,6 @@ body {
 
 /* ------ hero------- */
 .hero {
-  background-color: rgb(48, 48, 48);
 }
 .networks {
 }
@@ -89,6 +126,10 @@ body {
 .networks-link:focus {
   color: var(--accent-color);
 }
+.hero-content {
+  background-color: var(--second-title-color);
+  padding: 272px 0 206px 96px;
+}
 .hero-pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -96,6 +137,7 @@ body {
   letter-spacing: 0.1em;
   /* text-transform: uppercase; */
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-gap);
 }
 .hero-title {
   font-family: 'Raleway', sans-serif;
@@ -104,6 +146,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--header-color-text);
+  margin-bottom: var(--typical-gap);
 }
 .hero-after-title {
   font-weight: 400;
@@ -111,10 +154,14 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 400px;
+  margin-bottom: var(--typical-gap);
 }
 
 /* -------about------- */
 .about {
+  padding-top: 170px;
+  padding-bottom: 80px;
 }
 .about-list {
 }
@@ -127,6 +174,7 @@ body {
   letter-spacing: 0.1em;
   /* text-transform: uppercase; */
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 .about-title {
   font-family: 'Raleway', sans-serif;
@@ -135,18 +183,21 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 .about-after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  margin-bottom: var(--typical-gap);
 }
 .about-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
 }
 .about-btn {
   font-weight: 600;
@@ -163,6 +214,8 @@ body {
 /* --prices---- */
 .prices {
   background-color: rgb(48, 48, 48);
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .prices-pre-title {
   font-weight: 600;
@@ -171,6 +224,7 @@ body {
   letter-spacing: 0.1em;
   /* text-transform: uppercase; */
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-gap);
 }
 .prices-title {
   font-family: 'Raleway';
@@ -180,10 +234,15 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--header-color-text);
+  margin-bottom: 44px;
 }
 .prices-list {
+  border: 2px solid white;
+  padding: 30px 40px;
+  /* margin-bottom: 50px; */
 }
 .prices-item {
+  margin-bottom: var(--typical-gap);
 }
 .prices-text {
   font-weight: 400;
@@ -196,7 +255,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
-  text-align: right;
+  /* text-align: right; */
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -215,12 +274,17 @@ body {
 }
 /*---- features---- */
 .features {
+  padding-top: 143px;
+  padding-bottom: 137px;
 }
 .features-list {
 }
-.list {
-}
+
 .features-item {
+  width: 170px;
+  height: 133px;
+  border: 2px solid black;
+  padding: 20px 24px;
 }
 .features-count {
   font-weight: 700;
@@ -244,6 +308,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 .features-title {
   font-family: 'Raleway';
@@ -254,6 +319,7 @@ body {
   letter-spacing: 0.05em;
 
   color: var(--second-btn-color);
+  margin-bottom: var(--typical-gap);
 }
 .features-after-title {
   font-weight: 400;
@@ -264,6 +330,8 @@ body {
 }
 /* ---- masters---- */
 .masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .masters-pre-title {
   font-weight: 600;
@@ -272,6 +340,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 .masters-title {
   font-family: 'Raleway';
@@ -280,10 +349,14 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .masters-list {
 }
 .masters-card {
+}
+.masters-img {
+  margin-bottom: 30px;
 }
 .masters-card-title {
   font-weight: 400;
@@ -293,6 +366,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 .masters-card-text {
   font-weight: 400;
@@ -304,6 +378,8 @@ body {
 }
 /* ----examples--- */
 .examples {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .examples-text {
   font-weight: 600;
@@ -312,6 +388,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .examples-list {
 }
@@ -352,8 +429,15 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--header-color-text);
+  margin-bottom: 40px;
+}
+.contact-address {
+  margin-bottom: 70px;
+}
+.contacts-lists {
 }
 .contacts-list {
+  margin-bottom: var(--typical-gap);
 }
 .contacts-link {
   font-weight: 400;
@@ -362,6 +446,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  margin-bottom: var(--typical-gap);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -369,12 +454,14 @@ body {
 }
 
 .contact-bold {
+  display: block;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--header-color-text);
+  margin-bottom: var(--typical-gap);
 }
 .contact-text {
   font-weight: 400;
@@ -386,6 +473,8 @@ body {
 /* ----- footer--- */
 
 .footer {
+  padding-top: 57px;
+  padding-bottom: 55px;
 }
 .footer-copy {
   font-weight: 600;
