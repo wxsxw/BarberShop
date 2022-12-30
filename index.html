@@ -29,7 +29,7 @@
       </nav>
       <div class="header-contacts">
         <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-        <button type="button" class="btn-black">онлайн-запись</button>
+        <button type="button" class="btn-black" data-modal-open>онлайн-запись</button>
       </div>
     </div>
   </header>
@@ -39,8 +39,10 @@
       <div class="conteiner ">
         <div class="hero-flex">
           <div class="networks">
-            <a href="" target="_blank" class="networks-link link">Instagram</a>
-            <a href="" target="_blank" class="networks-link link">Youtube</a>
+            <ul class="networks-list list">
+              <li class="networks-item"><a href="" target="_blank" class="networks-link link">Instagram</a></li>
+              <li class="networks-item"><a href="" target="_blank" class="networks-link link">Youtube</a></li>
+            </ul>
           </div>
           <div class="hero-content">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
@@ -72,7 +74,7 @@
               которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
               каждого, кто к нам приходит!
             </p>
-            <button type="button" class="white-btn">онлайн-запись</button>
+            <button type="button" class="white-btn" data-modal-open>онлайн-запись</button>
           </div>
         </div>
       </div>
@@ -120,7 +122,7 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="btn-black prices-btn">онлайн-запись</button>
+        <button type="button" class="btn-black prices-btn" data-modal-open>онлайн-запись</button>
       </div>
     </section>
     <!--  Наши преимущества  features-->
@@ -161,7 +163,14 @@
         <h2 class="masters-title">Наши мастера</h2>
         <ul class="masters-list list">
           <li class="masters-card">
-            <img src="./img/John Smith.jpg" width="370" height="346" class="masters-img" alt="John Smith" />
+            <div class="masters-cover-wrap">
+              <img src="./img/John Smith.jpg" width="370" height="346" class="masters-img" alt="John Smith" />
+              <p class="masters-cover-text">
+                Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
+                digital espionage
+                and attacks on competitors' secure servers.
+              </p>
+            </div>
             <h3 class="masters-card-title">John Smith</h3>
             <p class="masters-card-text">Extreme Barber</p>
             <ul class="card-list list">
@@ -188,7 +197,14 @@
             </ul>
           </li>
           <li class="masters-card">
-            <img src="./img/Michele Doe.jpg" width="370" height="346" class="masters-img" alt="Michele Doe" />
+            <div class="masters-cover-wrap">
+              <img src="./img/Michele Doe.jpg" width="370" height="346" class="masters-img" alt="Michele Doe" />
+              <p class="masters-cover-text">
+                Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
+                digital espionage
+                and attacks on competitors' secure servers.
+              </p>
+            </div>
             <h3 class="masters-card-title">Michele Doe</h3>
             <p class="masters-card-text">Extreme Barber</p>
             <ul class="card-list list">
@@ -215,7 +231,14 @@
             </ul>
           </li>
           <li class="masters-card">
-            <img src="./img/Alan Black.jpg" width="370" height="346" class="masters-img" alt="Alan Black" />
+            <div class="masters-cover-wrap">
+              <img src="./img/Alan Black.jpg" width="370" height="346" class="masters-img" alt="Alan Black" />
+              <p class="masters-cover-text">
+                Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
+                digital espionage
+                and attacks on competitors' secure servers.
+              </p>
+            </div>
             <h3 class="masters-card-title">Alan Black</h3>
             <p class="masters-card-text">Extreme Barber</p>
             <ul class="card-list list">
@@ -299,18 +322,27 @@
         </section>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="conteiner">
-        <p class="footer-copy">&copy; Copyright 2020</p>
-        <ul class="footer-list list">
-          <li><a href="" class="footer-link link" target="_blank">instagram</a></li>
-          <li><a href="" class="footer-link link" target="_blank">YouTube</a></li>
-        </ul>
-      </div>
-    </footer>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="conteiner">
+      <p class="footer-copy">&copy; Copyright 2020</p>
+      <ul class="footer-list list">
+        <li><a href="" class="footer-link link" target="_blank">instagram</a></li>
+        <li><a href="" class="footer-link link" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="btn-modal" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

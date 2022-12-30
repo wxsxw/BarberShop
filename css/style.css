@@ -71,6 +71,7 @@ body {
   border-radius: 25px;
   background-color: transparent;
   padding: 12px 20px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .white-btn {
   font-weight: 600;
@@ -105,9 +106,8 @@ body {
 
 /* ---- header----- */
 .header {
-  background-color: grey;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  position: absolute;
+  width: 100%;
 }
 .header-flex {
   display: flex;
@@ -135,6 +135,7 @@ body {
   letter-spacing: 0.1em;
   color: var(--header-color-text);
   padding: 42px 0;
+  transition: color 205ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -155,6 +156,7 @@ body {
   text-transform: uppercase;
   color: var(--header-color-text);
   margin-right: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -167,7 +169,20 @@ body {
 .hero-flex {
   display: flex;
 }
+
 .networks {
+  width: 93px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 22px;
+  padding-bottom: 40px;
+}
+.networks-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg) translate(-19px);
+  transform-origin: top left;
 }
 .networks-link {
   font-weight: 600;
@@ -180,6 +195,17 @@ body {
 .networks-link:focus {
   color: var(--accent-color);
 }
+.networks-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--second-title-color);
+  margin-right: 40px;
+}
+.networks-item + .networks-item {
+  margin-left: 40px;
+}
+
 .hero-content {
   background-color: var(--second-title-color);
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
@@ -270,11 +296,13 @@ body {
   border-radius: 25px;
   background-color: transparent;
   padding: 12px 20px;
+  transition: background-color 300ms;
 }
 
 .white-btn:hover,
 .white-btn:focus {
   background-color: var(--accent-color);
+  color: var(--first-btn-color);
 }
 /* --prices---- */
 .prices {
@@ -463,9 +491,31 @@ body {
 .masters-card:not(:last-child) {
   margin-right: 30px;
 }
+.masters-card:hover .masters-cover-text {
+  transform: translateY(0);
+}
+.masters-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.masters-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  color: var(--header-color-text);
+  background-color: rgba(255, 106, 0, 0.64);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  transform: translateY(100%);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .masters-img {
-  margin-bottom: 30px;
 }
 .masters-card-title {
   font-weight: 400;
@@ -475,6 +525,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--second-title-color);
+  margin-top: 30px;
   margin-bottom: 8px;
 }
 .masters-card-text {
@@ -506,6 +557,8 @@ body {
   color: var(--second-title-color);
   background-color: #ffffff;
   border-radius: 50%;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cart-link:hover,
 .cart-link:focus {
@@ -605,6 +658,7 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
   margin-bottom: var(--typical-gap);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -678,8 +732,45 @@ body {
   letter-spacing: 0.2em;
   color: var(--second-title-color);
   margin-left: 40px;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+/* ------ modal---- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms, visibility 300ms;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--first-btn-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.btn-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
