@@ -602,6 +602,7 @@ body {
   flex-grow: 1;
   padding-top: 130px;
   padding-bottom: 130px;
+  padding-right: 41px;
 }
 .online-title {
   font-family: 'Raleway';
@@ -610,7 +611,75 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--header-color-text);
+  margin-bottom: 44px;
 }
+.online-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.online-field {
+  position: relative;
+  width: 260px;
+}
+
+.online-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.online-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 100%;
+  height: 24px;
+  outline: none;
+  color: #ffffff;
+}
+.online-input:focus {
+  border-color: #ffffff;
+}
+.online-input:focus + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-comments {
+  position: relative;
+  margin-bottom: 44px;
+}
+.online-text {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 100%;
+  height: 76px;
+  outline: none;
+  color: #ffffff;
+  resize: none;
+}
+
+.online-text:focus + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-text:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+
 .online-btn {
   font-weight: 600;
   font-size: 12px;

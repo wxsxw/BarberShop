@@ -286,6 +286,24 @@
 
         <section class="online">
           <h2 class="online-title">Онлайн-запись</h2>
+          <form action="#">
+            <div class="online-wrap">
+              <div class="online-field">
+
+                <input class="online-input" type="text" name="username" id="username" placeholder=" ">
+                <label class="online-label" for="username">Имя*</label>
+              </div>
+              <div class="online-field">
+
+                <input class="online-input" type="tel" name="usertel" id="usertel" placeholder=" ">
+                <label class="online-label" for="username">Телефон*</label>
+              </div>
+            </div>
+            <div class="online-comments">
+              <textarea name="comment-user" id="comment-user" class="online-text" placeholder=" "></textarea>
+              <label for="comment-user" class="online-label">сообщение</label>
+            </div>
+          </form>
           <button type="button" class="btn-black">отправить</button>
         </section>
 
@@ -333,7 +351,7 @@
       </ul>
     </div>
   </footer>
-  <div class="backdrop " data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="btn-modal" data-modal-close>
         <svg width="11" height="11">
