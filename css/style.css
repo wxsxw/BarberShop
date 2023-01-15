@@ -903,14 +903,14 @@ body {
 .form-fild__coment:focus {
   border-color: var(--accent-color);
 }
-.form-fild__check:checked + .form-fild__text::before {
+.form-fild__check:checked + .form-fild__check--text::before {
   background-color: var(--accent-color);
   background-image: url(../img/check.svg);
   border-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.form-fild__text {
+.form-fild__check--text {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -919,7 +919,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.form-fild__text::before {
+.form-fild__check--text::before {
   content: '';
   width: 16px;
   height: 15px;
