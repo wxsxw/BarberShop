@@ -17,18 +17,18 @@
 
 <body>
   <header class="header">
-    <div class="conteiner header-flex">
+    <div class="conteiner d-flex">
       <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="Logo" /></a>
-      <nav class="header-nav">
-        <ul class="nav list">
-          <li class="nav-item"><a href="#about" class="nav-link link">О нас</a></li>
-          <li class="nav-item"><a href="#prices" class="nav-link link">Услуги и цены</a></li>
-          <li class="nav-item"><a href="#masters" class="nav-link link">Мастера</a></li>
-          <li class="nav-item"><a href="#contacts" class="nav-link link">Контакты</a></li>
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link link">О нас</a></li>
+          <li class="nav__item"><a href="#prices" class="nav__link link">Услуги и цены</a></li>
+          <li class="nav__item"><a href="#masters" class="nav__link link">Мастера</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link link">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header-contacts">
-        <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+      <div class="connect">
+        <a href="tel:+380441111111" class="connect__tel link">+38 044 111 11 11</a>
         <button type="button" class="btn-black" data-modal-open>онлайн-запись</button>
       </div>
     </div>
@@ -39,15 +39,15 @@
       <div class="conteiner ">
         <div class="hero-flex">
           <div class="networks">
-            <ul class="networks-list list">
-              <li class="networks-item"><a href="" target="_blank" class="networks-link link">Instagram</a></li>
-              <li class="networks-item"><a href="" target="_blank" class="networks-link link">Youtube</a></li>
+            <ul class="networks__list list">
+              <li class="networks__item"><a href="" target="_blank" class="networks__link link">Instagram</a></li>
+              <li class="networks__item"><a href="" target="_blank" class="networks__link link">Youtube</a></li>
             </ul>
           </div>
           <div class="hero-content">
-            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-after-title">
+            <p class="hero-content__pre-title pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-content__title">BarberShop</h1>
+            <p class="hero-content__after-title">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
             </p>
           </div>
@@ -59,16 +59,16 @@
       <div class="conteiner">
         <div class="about-flex">
           <ul class="about-list list">
-            <li class="about-item"><img src="./img/помазок.jpg" alt="помазок" width="270" /></li>
-            <li class="about-item"><img src="./img/опаска.jpg" alt="опаска" width="270" /></li>
+            <li class="about-list__item"><img src="./img/помазок.jpg" alt="помазок" width="270" /></li>
+            <li class="about-list__item"><img src="./img/опаска.jpg" alt="опаска" width="270" /></li>
           </ul>
           <div class="about-content">
-            <p class="about-pre-title pre-title">О НАС</p>
-            <h2 class="about-title">Лучший Барбершоп твоего города</h2>
-            <p class="about-after-title">
+            <p class="about-content__pre-title pre-title">О НАС</p>
+            <h2 class="about-content__title">Лучший Барбершоп твоего города</h2>
+            <p class="about-content__after-title">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </p>
-            <p class="about-text">
+            <p class="about-content__text">
               Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
               попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
               которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
@@ -85,71 +85,71 @@
         <p class="prices-pre-title pre-title">Проведи время в компании лучших мастеров</p>
         <h2 class="prices-title">Услуги и цены</h2>
         <div class="prices-flex">
-          <ul class="prices-list prices-list-light list">
-            <li class="prices-item">
-              <p class="prices-text">Мужская стрижка</p>
-              <p class="prices-text">от 300 грн.</p>
+          <ul class="prices-list prices-list--light list">
+            <li class="prices-list__item">
+              <p class="prices-list__text">Мужская стрижка</p>
+              <p class="prices-list__text">от 300 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Стрижка бороды</p>
-              <p class="prices-text">от 200 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Стрижка бороды</p>
+              <p class="prices-list__text">от 200 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Стрижка усов</p>
-              <p class="prices-text">от 200 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Стрижка усов</p>
+              <p class="prices-list__text">от 200 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Бритье опасной бритвой</p>
-              <p class="prices-text">от 200 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Бритье опасной бритвой</p>
+              <p class="prices-list__text">от 200 грн.</p>
             </li>
           </ul>
-          <ul class="prices-list prices-list-dark list">
-            <li class="prices-item">
-              <p class="prices-text">Cтрижка у стажера</p>
-              <p class="prices-text">от 50 грн.</p>
+          <ul class="prices-list prices-list--dark list">
+            <li class="prices-list__item">
+              <p class="prices-list__text">Cтрижка у стажера</p>
+              <p class="prices-list__text">от 50 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Стрижка под насадку</p>
-              <p class="prices-text">от 200 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Стрижка под насадку</p>
+              <p class="prices-list__text">от 200 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Детская стрижка (до 12 лет)</p>
-              <p class="prices-text">от 300 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Детская стрижка (до 12 лет)</p>
+              <p class="prices-list__text">от 300 грн.</p>
             </li>
-            <li class="prices-item">
-              <p class="prices-text">Камуфлирование седины</p>
-              <p class="prices-text">от 200 грн.</p>
+            <li class="prices-list__item">
+              <p class="prices-list__text">Камуфлирование седины</p>
+              <p class="prices-list__text">от 200 грн.</p>
             </li>
           </ul>
         </div>
-        <button type="button" class="btn-black prices-btn" data-modal-open>онлайн-запись</button>
+        <button type="button" class="btn-black prices-list__btn" data-modal-open>онлайн-запись</button>
       </div>
     </section>
     <!--  Наши преимущества  features-->
     <section class="features">
       <div class="conteiner features-flex">
         <ul class="features-list list">
-          <li class="features-item">
-            <span class="features-count">600</span>
-            <p class="count-text">Довольных клиентов в день</p>
+          <li class="features-list__item">
+            <span class="features-list__count">600</span>
+            <p class="features-list__text">Довольных клиентов в день</p>
           </li>
-          <li class="features-item">
-            <span class="features-count">20</span>
-            <p class="count-text">Лучших мастеров Киева</p>
+          <li class="features-list__item">
+            <span class="features-list__count">20</span>
+            <p class="features-list__text">Лучших мастеров Киева</p>
           </li>
-          <li class=" features-item">
-            <span class="features-count">50</span>
-            <p class="count-text">Наград за отличный сервис</p>
+          <li class=" features-list__item">
+            <span class="features-list__count">50</span>
+            <p class="features-list__text">Наград за отличный сервис</p>
           </li>
-          <li class=" features-item">
-            <span class="features-count">100</span>
-            <p class="count-text">Подарков постоянным клиентам</p>
+          <li class=" features-list__item">
+            <span class="features-list__count">100</span>
+            <p class="features-list__text">Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <div class="features-wrap">
-          <p class="features-pre-title pre-title">старая традиционная школа</p>
-          <h2 class="features-title">Почему приходят именно к нам?</h2>
-          <p class="features-after-title">
+        <div class="features-content">
+          <p class="features-content__pre-title pre-title">старая традиционная школа</p>
+          <h2 class="features-content__title">Почему приходят именно к нам?</h2>
+          <p class="features-content__after-title">
             О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
             прочитать.
           </p>
@@ -159,37 +159,38 @@
     <!-- Наши мастера -->
     <section id=" masters" class="masters">
       <div class="conteiner">
-        <p class="masters-pre-title pre-title">для настоящих ценителей атмосферы</p>
-        <h2 class="masters-title">Наши мастера</h2>
+        <p class="masters-content__pre-title pre-title">для настоящих ценителей атмосферы</p>
+        <h2 class="masters-content__title">Наши мастера</h2>
         <ul class="masters-list list">
           <li class="masters-card">
-            <div class="masters-cover-wrap">
-              <img src="./img/John Smith.jpg" width="370" height="346" class="masters-img" alt="John Smith" />
-              <p class="masters-cover-text">
+            <div class="cover">
+              <img src="./img/John Smith.jpg" width="370" height="346" class="cover__img" alt="John Smith" />
+              <p class="cover__text">
                 Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
                 digital espionage
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <h3 class="masters-card-title">John Smith</h3>
-            <p class="masters-card-text">Extreme Barber</p>
-            <ul class="card-list list">
-              <li class="cart-item"><a href="" class="cart-link link">
+            <h3 class="masters-card__title">John Smith</h3>
+            <p class="masters-card__text">Extreme Barber</p>
+
+            <ul class="soc-list list">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -197,33 +198,33 @@
             </ul>
           </li>
           <li class="masters-card">
-            <div class="masters-cover-wrap">
-              <img src="./img/Michele Doe.jpg" width="370" height="346" class="masters-img" alt="Michele Doe" />
-              <p class="masters-cover-text">
+            <div class="cover">
+              <img src="./img/Michele Doe.jpg" width="370" height="346" class="cover__img" alt="Michele Doe" />
+              <p class="cover__text">
                 Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
                 digital espionage
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <h3 class="masters-card-title">Michele Doe</h3>
-            <p class="masters-card-text">Extreme Barber</p>
-            <ul class="card-list list">
-              <li class="cart-item"><a href="" class="cart-link link">
+            <h3 class="masters-card__title">Michele Doe</h3>
+            <p class="masters-card__text">Extreme Barber</p>
+            <ul class="soc-list list">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -231,33 +232,33 @@
             </ul>
           </li>
           <li class="masters-card">
-            <div class="masters-cover-wrap">
-              <img src="./img/Alan Black.jpg" width="370" height="346" class="masters-img" alt="Alan Black" />
-              <p class="masters-cover-text">
+            <div class="cover">
+              <img src="./img/Alan Black.jpg" width="370" height="346" class="cover__img" alt="Alan Black" />
+              <p class="cover__text">
                 Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
                 digital espionage
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <h3 class="masters-card-title">Alan Black</h3>
-            <p class="masters-card-text">Extreme Barber</p>
-            <ul class="card-list list">
-              <li class="cart-item"><a href="" class="cart-link link">
+            <h3 class="masters-card__title">Alan Black</h3>
+            <p class="masters-card__text">Extreme Barber</p>
+            <ul class="soc-list list">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a></li>
-              <li class="cart-item"><a href="" class="cart-link link">
+              <li class="soc-list__item"><a href="" class="soc-list__link link">
                   <svg class="cart-icon" width="20" height="20">
                     <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -272,10 +273,11 @@
       <div class="conteiner">
         <p class="examples-text pre-title">На латинском языке “барба” означает “борода”</p>
         <lu class="examples-list list">
-          <li class="examples-item"><img src="./img/стрижка.jpg" alt="стрижка" width="270" height="360" /></li>
-          <li class="examples-item"><img src="./img/бритье.jpg" alt="бритье" width="270" height="360" /></li>
-          <li class="examples-item"><img src="./img/спа.jpg" alt="спа" width="270" height="360" /></li>
-          <li class="examples-item"><img src="./img/окантовка.jpg" alt="окантовка" width="270" height="360" /></li>
+          <li class="examples-list__item"><img src="./img/стрижка.jpg" alt="стрижка" width="270" height="360" /></li>
+          <li class="examples-list__item"><img src="./img/бритье.jpg" alt="бритье" width="270" height="360" /></li>
+          <li class="examples-list__item"><img src="./img/спа.jpg" alt="спа" width="270" height="360" /></li>
+          <li class="examples-list__item"><img src="./img/окантовка.jpg" alt="окантовка" width="270" height="360" />
+          </li>
         </lu>
       </div>
     </section>
@@ -290,18 +292,18 @@
             <div class="online-wrap">
               <div class="online-field">
 
-                <input class="online-input" type="text" name="username" id="username" placeholder=" ">
-                <label class="online-label" for="username">Имя*</label>
+                <input class="online-field__input" type="text" name="username" id="username" placeholder=" ">
+                <label class="online-field__label" for="username">Имя*</label>
               </div>
               <div class="online-field">
 
-                <input class="online-input" type="tel" name="usertel" id="usertel" placeholder=" ">
-                <label class="online-label" for="username">Телефон*</label>
+                <input class="online-field__input" type="tel" name="usertel" id="usertel" placeholder=" ">
+                <label class="online-field__label" for="username">Телефон*</label>
               </div>
             </div>
             <div class="online-comments">
-              <textarea name="comment-user" id="comment-user" class="online-text" placeholder=" "></textarea>
-              <label for="comment-user" class="online-label">сообщение</label>
+              <textarea name="comment-user" id="comment-user" class="online-comments__text" placeholder=" "></textarea>
+              <label for="comment-user" class="online-comments__label">сообщение</label>
             </div>
           </form>
           <button type="button" class="btn-black">отправить</button>
@@ -310,26 +312,26 @@
         <!--contacts  -->
 
         <section id="contacts" class="contact">
-          <h2 class="contact-title">Контакты</h2>
-          <address class="contact-address">
-            <ul class="contacts-lists list">
-              <li class="contacts-list">
-                <a href=" " target="_blank" class="contacts-link link">
-                  <svg class="contacts-icon" width="24" height="24">
+          <h2 class="contact__title">Контакты</h2>
+          <address class="contact__address">
+            <ul class="contacts-list list">
+              <li class="contacts-list__item">
+                <a href=" " target="_blank" class="contacts-list__link link">
+                  <svg class="contacts-list__icon" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-map-pin"></use>
                   </svg>
                   ул. Васильковая, 7А Киев,
                   08132</a>
               </li>
-              <li class="contacts-list">
-                <a href="tel:+380441111111" class="contacts-link link">
-                  <svg class="contacts-icon" width="24" height="24">
+              <li class="contacts-list_item">
+                <a href="tel:+380441111111" class="contacts-list__link link">
+                  <svg class="contacts-list__icon" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-phone"></use>
                   </svg>
                   +38 044 111 11 11</a>
               </li>
-              <li class="contacts-list"><a href="mailto:barbershop@email.com" class="contacts-link link">
-                  <svg class="contacts-icon" width="24" height="24">
+              <li class="contacts-list__item"><a href="mailto:barbershop@email.com" class="contacts-list__link link">
+                  <svg class="contacts-list__icon" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-mail"></use>
                   </svg>
                   barbershop@email.com</a></li>
@@ -346,11 +348,13 @@
     <div class="conteiner">
       <p class="footer-copy">&copy; Copyright 2020</p>
       <ul class="footer-list list">
-        <li><a href="" class="footer-link link" target="_blank">instagram</a></li>
-        <li><a href="" class="footer-link link" target="_blank">YouTube</a></li>
+        <li><a href="" class="footer-list__link link" target="_blank">instagram</a></li>
+        <li><a href="" class="footer-list__link link" target="_blank">YouTube</a></li>
       </ul>
     </div>
   </footer>
+
+  <!--------- Modal--------- -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="btn-modal" data-modal-close>
@@ -358,46 +362,47 @@
           <use href="./img/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-title">
+      <p class="modal__title">
         Leave your information and we'll call you back
       </p>
       <form action="#" class="modal-form">
         <div class="form-fild">
-          <label for="user-name" class="input-text">Name</label>
-          <div class="input-wrap">
-            <input type="text" id="user-name" placeholder="Name" name="user-name" class="modal-input" required>
-            <svg class="input-icon" width="18" height="18">
+          <label for="user-name" class="form-fild__text">Name</label>
+          <div class="form-fild__wrap">
+            <input type="text" id="user-name" placeholder="Name" name="user-name" class="form-fild__input" required>
+            <svg class="form-fild__icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
         </div>
         <div class="form-fild">
-          <label for="user-tel" class="input-text">Telephone</label>
-          <div class="input-wrap">
-            <input type="tel" id="user-tel" placeholder="Telephone" name="user-tel" class="modal-input" value="+380"
-              required>
-            <svg class="input-icon" width="18" height="18">
+          <label for="user-tel" class="form-fild__text">Telephone</label>
+          <div class="form-fild__wrap">
+            <input type="tel" id="user-tel" placeholder="Telephone" name="user-tel" class="form-fild__input"
+              value="+380" required>
+            <svg class="form-fild__icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
         </div>
         <div class="form-fild">
-          <label for="user-name" class="input-text">E-mail</label>
-          <div class="input-wrap">
-            <input type="email" id="input-text" placeholder="E-mail" name="user-email" class="modal-input" required>
-            <svg class="input-icon" width="18" height="18">
+          <label for="user-name" class="form-fild__text">E-mail</label>
+          <div class="form-fild__wrap">
+            <input type="email" id="input-text" placeholder="E-mail" name="user-email" class="form-fild__input"
+              required>
+            <svg class="form-fild__icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-email"></use>
             </svg>
           </div>
         </div>
         <div class="form-fild">
-          <label for="user-text" class="input-text">Comments</label>
-          <textarea class="modal-coment" name="user-coment" id="user-text" placeholder="Enter the text"></textarea>
+          <label for="user-text" class="form-fild__text">Comments</label>
+          <textarea class="form-fild__coment" name="user-coment" id="user-text" placeholder="Enter the text"></textarea>
         </div>
 
         <div class="form-fild">
-          <input type="checkbox" class="modal-check visually-hidden " id="modal-check" name="polyci-check">
-          <label for="modal-check" class="modal-check-text">I agree with the letter and accept the Terms and
+          <input type="checkbox" class="form-fild__check visually-hidden " id="modal-check" name="polyci-check">
+          <label for="modal-check" class="form-fild__text">I agree with the letter and accept the Terms and
             Conditions</label>
         </div>
 
