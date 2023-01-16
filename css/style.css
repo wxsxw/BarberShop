@@ -665,6 +665,18 @@ body {
   color: #ffffff;
   resize: none;
 }
+.online-comments__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}
 
 .online-comments__text:focus + .online-comments__label {
   transform: translateY(-100%);
