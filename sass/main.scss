@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./base/common.scss";
+@import "./base/reset";
+@import "./components/conteiner";
+@import "./utils/hidden";
+
+@import "./components/btn";
+@import "./components/pre-title";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/prices";
+@import "./layout/features";
+@import "./layout/masters";
+@import "./layout/examples";
+@import "./layout/online";
+@import "./layout/contacts";
+@import "./layout/footer";
+
+@import "./components/modal";
