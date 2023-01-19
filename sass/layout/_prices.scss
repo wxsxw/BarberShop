@@ -41,28 +41,32 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  &::before {
+    content: "";
+    flex-grow: 1;
+    /* заполнение всего свободного места */
+    height: 1px;
+    background-color: currentColor;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: var(--typical-gap);
+  }
 }
-.prices-list__item::before {
-  content: "";
-  flex-grow: 1;
-  /* заполнение всего свободного места */
-  height: 1px;
-  background-color: currentColor;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-.prices-list__item:not(:last-child) {
-  margin-bottom: var(--typical-gap);
-}
+
 .prices-list__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-}
-.prices-list__text:first-child {
-  order: -1;
+
+  &:first-child {
+    order: -1;
+  }
 }
 
 .prices-list__btn {

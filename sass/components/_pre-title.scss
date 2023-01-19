@@ -7,11 +7,12 @@
   margin-bottom: var(--typical-gap);
   display: flex;
   align-items: center;
-}
-.pre-title::before {
-  content: "";
-  width: 63px;
-  height: 1px;
-  background-color: currentColor;
-  margin-right: 21px;
+
+  &::before {
+    content: "";
+    width: 63px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 21px;
+  }
 }

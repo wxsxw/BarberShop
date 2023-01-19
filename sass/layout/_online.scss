@@ -32,8 +32,16 @@
   line-height: 1.4;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: rgba(157, 164, 189, 0.4);
+
+  .online-field__input:focus + & {
+    transform: translateY(-100%);
+    color: #ffffff;
+  }
+  .online-field__input:not(:placeholder-shown) + & {
+    transform: translateY(-100%);
+    color: #ffffff;
+  }
 }
 
 .online-field__input {
@@ -44,32 +52,28 @@
   height: 24px;
   outline: none;
   color: #ffffff;
+
+  &:focus {
+    border-color: #ffffff;
+  }
 }
-.online-field__input:focus {
-  border-color: #ffffff;
-}
-.online-field__input:focus + .online-field__label {
-  transform: translateY(-100%);
-  color: #ffffff;
-}
-.online-field__input:not(:placeholder-shown) + .online-field__label {
-  transform: translateY(-100%);
-  color: #ffffff;
-}
+
 .online-comments {
   position: relative;
   margin-bottom: 44px;
+
+  &__text {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    width: 100%;
+    height: 76px;
+    outline: none;
+    color: #ffffff;
+    resize: none;
+  }
 }
-.online-comments__text {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  width: 100%;
-  height: 76px;
-  outline: none;
-  color: #ffffff;
-  resize: none;
-}
+
 .online-comments__label {
   position: absolute;
   top: 0;
@@ -81,15 +85,15 @@
   text-transform: uppercase;
 
   color: rgba(157, 164, 189, 0.4);
-}
 
-.online-comments__text:focus + .online-comments__label {
-  transform: translateY(-100%);
-  color: #ffffff;
-}
-.online-comments__text:not(:placeholder-shown) + .online-comments__label {
-  transform: translateY(-100%);
-  color: #ffffff;
+  .online-comments__text:focus + & {
+    transform: translateY(-100%);
+    color: #ffffff;
+  }
+  .online-comments__text:not(:placeholder-shown) + & {
+    transform: translateY(-100%);
+    color: #ffffff;
+  }
 }
 
 .online-btn {
@@ -100,8 +104,9 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--header-color-text);
-}
-.online-btn:hover,
-.online-btn:focus {
-  background-color: #ff6c00;
+
+  &:hover,
+  &:focus {
+    background-color: #ff6c00;
+  }
 }
