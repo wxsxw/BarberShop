@@ -829,7 +829,8 @@ img {
   padding-bottom: 130px;
   padding-left: 100px;
 }
-.contact_title {
+
+.contact__title {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
@@ -838,6 +839,7 @@ img {
   color: var(--header-color-text);
   margin-bottom: 40px;
 }
+
 .contact__address {
   margin-bottom: 70px;
 }
